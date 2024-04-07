@@ -1,0 +1,196 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f; /* Dark background color */
+    background-image: linear-gradient(135deg, #ffcc00, #ff0066); /* Linear gradient from yellow to pink */
+    color: #fff; /* Text color for better visibility */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+section {
+    padding: 50px 20px; /* Add left and right padding */
+    margin: 0 auto; /* Center the sections */
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section p {
+    text-align: justify;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+#about{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+}
+
+.about-img{
+    margin: auto;
+}
+
+.about-img img {
+    width: 400px;
+    height: auto;
+    
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for better contrast */
+    padding: 20px 20px; /* Add left and right padding */
+    text-align: left; /* Align the text to the left */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Banner styles */
+#banner {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    /* animation: energyFlow 3s infinite alternate; */
+}
+
+@keyframes energyFlow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    section ul li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-img img{
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section {
+        padding: 50px 10px; /* Adjust the padding */
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    section ul li {
+        font-size: 14px;
+    }
+}
